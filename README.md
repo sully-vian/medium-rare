@@ -2,6 +2,8 @@
 
 A simple extension to highlight raw code in chrome.
 
+![](./assets/screenshot.png)
+
 ## TODO
 
 - [x] Dynamic CSS loading with respect to the selected theme
