@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Highlight",
+  "version": "1.0",
+  "permissions": ["storage", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["vendor/*.min.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
