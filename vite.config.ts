@@ -5,10 +5,11 @@ import { viteStaticCopy } from "vite-plugin-static-copy";
 export default defineConfig({
   plugins: [
     viteStaticCopy({
+      // copy css files to vendor
       targets: [
         {
-          src: "node_modules/highlight.js/styles/*.min.css",
-          dest: "vendor",
+          src: resolve(__dirname, "node_modules/highlight.js/styles/*.min.css"),
+          dest: resolve(__dirname, "dist/vendor"),
         },
       ],
     }),
@@ -20,8 +21,9 @@ export default defineConfig({
         content: resolve(__dirname, "src/content.ts"),
       },
       output: {
-        entryFileNames: (chunk) => {
-          switch (chunk.name) {
+        entryFileNames: (chunkInfo) => {
+          //console.log(chunk);
+          switch (chunkInfo.name) {
             case "popup":
               return "popup.js";
             case "content":

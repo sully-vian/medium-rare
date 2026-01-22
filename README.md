@@ -4,6 +4,12 @@ A simple extension to highlight raw code in chrome.
 
 ![](./assets/screenshot.png)
 
+```bash
+npm run check # check with biome
+
+npm run build # build & bundle with Vite
+```
+
 ## TODO
 
 - [x] Dynamic CSS loading with respect to the selected theme
@@ -11,8 +17,8 @@ A simple extension to highlight raw code in chrome.
 - [ ] Pretty popup selection
 - [x] Build step that fetches highlight.js
     - All themes are available on [npm](https://www.npmjs.com/package/highlight.js?activeTab=readme) and can be fetched at build time.
-- [ ] Popup should automatically list all themes
-    - Either invoke React (scary) or use js script to modify dom of `popup.html`
+- [x] Popup should automatically list all themes
+- [ ] Avoid freezing the window with [Web Workers](https://github.com/highlightjs/highlight.js?tab=readme-ov-file#using-web-workers)
 
 ## Sources
 
