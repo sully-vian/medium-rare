@@ -1,7 +1,7 @@
 // typst compile --format png --ppi 38 thumbnail.typ
 #set page(width: auto, height: auto, margin: 0pt)
 
-#let overlay = "#2"
+#let overlay = "#4"
 
 #box({
   image("thumbnail-ai.png")
