@@ -17,6 +17,7 @@ npm run build # build & bundle with Vite
 - [ ] Appearance
     - [ ] Pretty popup selection
         - [ ] custom dropdown for mouse wheele selection
+        - [ ] fix accents in theme names
     - [ ] Fix notif (borken because of popup styling.
     - [ ] Icon (Typst -> SVG)
 - [x] Build step that fetches highlight.js
